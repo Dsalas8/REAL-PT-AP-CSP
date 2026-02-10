@@ -4,9 +4,9 @@ print("Hello and welcome to GPATRACKER! The place where managing and viewing gra
 print("Select the class you'd like to view")
 
 print("Math, English, Science, Social Studies, Spanish, PE")
-class = input()
-# class = input("")
+subject = input("Enter the class youd like to view: ")
+
+
 #     # if class == "Math":
 #     #     print("HI")
-
 
