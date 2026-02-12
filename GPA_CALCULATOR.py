@@ -15,4 +15,9 @@ if subject == "Math":
     print(classes[0])
     print("Here below are your recent grades for " + subject +":")
     print(Math[0:])
+if subject == "English":
+    print(classes[0])
+    print("Here below are your recent grades for " + subject +":")
+    print(English[0:])
+
 
