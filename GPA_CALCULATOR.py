@@ -13,5 +13,6 @@ subject = input("Enter the class youd like to view: ")
 print("You chose " + subject + ", Here is your grade!")
 if subject == "Math":
     print(classes[0])
+    print("Here below are your recent grades for" subject)
     print(Math[0:])
 
