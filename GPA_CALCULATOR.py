@@ -23,5 +23,9 @@ if subject == "Science":
     print(classes[2])
     print("Here below are your recent grades for " + subject +":")
     print(Science[0:])
+if subject == "Social Studies":
+    print(classes[3])
+    print("Here below are your recent grades for " + subject +":")
+    print(Social_Studies[0:])
 
 
