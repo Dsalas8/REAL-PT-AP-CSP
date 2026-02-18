@@ -1,6 +1,6 @@
 #This program is trying to calculate the grades of people in a variety of subjects, showing the lowest grade and the highest grade. 
 print("Hello and welcome to GPATRACKER! The place where managing and viewing grades is easier than ever. Whenever you're ready, lets get started!")
-def view(subject):
+def view():
     print("Select the class you'd like to view")
     Math = [89, 100, 95, 93, 89]                                            #VALUES FOR MATH 
     English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
@@ -32,8 +32,9 @@ def view(subject):
         print("Ok, Have a great day!")
     while retry == "yes":
         print("Ok, here we go again.")
+    
         
     
-
+#CREATE A FUNCTION FOR THE WHOLE CODE 
 
 
