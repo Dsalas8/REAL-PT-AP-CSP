@@ -2,6 +2,18 @@
 
 print("Hello and welcome to GPATRACKER! The place where managing and viewing grades is easier than ever. Whenever you're ready, lets get started!")
 def function_1():
+    Math = [89, 100, 95, 93, 89]                                            #VALUES FOR MATH 
+    English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
+    Science = [83, 82, 100, 95, 82]                                         #VALUES FOR SCIENCE
+    Social_Studies = [100, 94, 88, 90, 92]                                  #VALUES FOR SOCIAL STUDIES
+    new_average = print("Would you like to any grades to a specific class? ")
+    if new_average == "yes":
+        Region = input
+        new = input("Enter your new grade: ")
+        Math.insert(-1)
+    if new_average == "no":
+
+def function_2():
     print("Select the class you'd like to view")
     Math = [89, 100, 95, 93, 89]                                            #VALUES FOR MATH 
     English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
@@ -27,16 +39,15 @@ def function_1():
         print(classes[3])
         print("Here below are your recent grades for " + subject +":")
         print(Social_Studies[0:])
-    retry = input("Do you want to look at other classes grades?")
+    retry = input("Do you want to look at other classes grades? ")
     while retry == "yes":
         print("Ok, here we go again.")
         print("--------------------------")
-        function_1() 
+        function_2() 
     if retry == "no":
         print("Ok, Have a great day!")
-        return
-function_1()
-        
+        return                                                          
+function_2()
 
 
 
