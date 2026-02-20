@@ -6,16 +6,30 @@ def function_1():
     English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
     Science = [83, 82, 100, 95, 82]                                         #VALUES FOR SCIENCE
     Social_Studies = [100, 94, 88, 90, 92]                                  #VALUES FOR SOCIAL STUDIES
-    new_average = print("Would you like to any grades to a specific class? ")
-    if new_average == "yes":
+    ask = print("Would you like to any grades to a specific class? ")
+    if ask == "yes":
         Region = input("Enter the class in which youd like to add a grade: ")
         if Region == "Math":
-            
-
-        new = input("Enter your new grade: ")
-        Math.insert(-1)
-    if new_average == "no":
-
+            new = input("Enter your new grade: ")
+            Math.insert(-1,new)
+        elif Region == "English":
+            new = input("Enter your new grade: ")
+            English.insert(-1,new)
+        elif Region == "Social Studies":
+            new = input("Enter your new grade: ")
+            Social_Studies.insert(-1,new)
+        elif Region == "Science":
+            new = input("Enter your new grade: ")
+            Science.insert(-1,new)
+        
+        
+    if ask == "no":
+        response = input("Would you like to review your grades once more? ")
+        if response == "Yes":
+            function(2)
+        if response == "no":
+            print("Have a Great Day!")
+            print("--------------------------")
 def function_2():
     print("Select the class you'd like to view")
     Math = [89, 100, 95, 93, 89]                                            #VALUES FOR MATH 
