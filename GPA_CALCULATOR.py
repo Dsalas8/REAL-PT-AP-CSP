@@ -30,6 +30,7 @@ def function_1():
     retry = input("Do you want to look at other classes grades?")
     while retry == "yes":
         print("Ok, here we go again.")
+        print("--------------------------")
         function_1() 
     if retry == "no":
         print("Ok, Have a great day!")
