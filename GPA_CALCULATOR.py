@@ -8,7 +8,10 @@ def function_1():
     Social_Studies = [100, 94, 88, 90, 92]                                  #VALUES FOR SOCIAL STUDIES
     new_average = print("Would you like to any grades to a specific class? ")
     if new_average == "yes":
-        Region = input
+        Region = input("Enter the class in which youd like to add a grade: ")
+        if Region == "Math":
+            
+
         new = input("Enter your new grade: ")
         Math.insert(-1)
     if new_average == "no":
@@ -46,7 +49,9 @@ def function_2():
         function_2() 
     if retry == "no":
         print("Ok, Have a great day!")
+        function_1()
         return                                                          
+print("----------------------------")
 function_2()
 
 
