@@ -6,24 +6,29 @@ def function_1():
     English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
     Science = [83, 82, 100, 95, 82]                                         #VALUES FOR SCIENCE
     Social_Studies = [100, 94, 88, 90, 92]                                  #VALUES FOR SOCIAL STUDIES
-    ask = input("Would you like to add any grades to a specific class? ")
+    print("-----------------------")
+    ask = input("Would you like to add any grades to a specific class? ")  #ASKS FOR WHAT CLASS THEY WANT TO REVIEW GRADES 
     if ask == "yes":
-        Region = input("Enter the class in which youd like to add a grade: ")
+        Region = input("Enter the class in which youd like to add a grade: ") #ASKS FOR CLASS INPUT
         if Region == "Math":
-            new = input("Enter your new grade: ")
+            new = input("Enter your new grade: ")   #FOR EVERY "elif" ASKS FOR NEW GRADE INPUT, PRINTS NEWLY CHANGED LIST
             Math.append(new)
+            print("Here are your updated grades!")
             print(Math)
         elif Region == "English":
             new = input("Enter your new grade: ")
             English.append(new)
+            print("Here are your updated grades!")
             print(English)
         elif Region == "Social Studies":
             new = input("Enter your new grade: ")
             Social_Studies.append(new)
+            print("Here are your updated grades!")
             print(Social_Studies)
         elif Region == "Science":
             new = input("Enter your new grade: ")
             Science.append(new)
+            print("Here are your updated grades!")
             print(Science)
       
 
@@ -56,6 +61,7 @@ def function_2():
         print(classes[3])
         print("Here below are your recent grades for " + subject +":")
         print(Social_Studies[0:])
+    print("----------------------")
     retry = input("Do you want to look at other classes grades? ")
     while retry == "yes":
         print("Ok, here we go again.")
@@ -66,6 +72,7 @@ def function_2():
     function_1()
 
 def function_3():
+    print("-----------------------------")
     answer = input("Would you like to review your grades once more? ")
     if answer == "yes":
         print("---------------------------")
@@ -76,11 +83,6 @@ def function_3():
         return  
      
          
-        
-
-
-    
-
     
                                                          
 print("----------------------------")
