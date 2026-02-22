@@ -68,8 +68,10 @@ def function_2():
 def function_3():
     answer = input("Would you like to review your grades once more? ")
     if answer == "yes":
+        print("---------------------------")
         function_2()
     else:
+        print("---------------------------")
         print("Have a good day!")
         return  
      
