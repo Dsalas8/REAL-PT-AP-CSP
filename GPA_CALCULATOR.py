@@ -25,15 +25,11 @@ def function_1():
             new = input("Enter your new grade: ")
             Science.append(new)
             print(Science)
-        
-        
+      
+
     if ask == "no":
-        response = input("Would you like to review your grades once more? ")
-        if response == "Yes":
-            function_2()
-        if response == "no":
-            print("Have a Great Day!")
-            print("--------------------------")
+        function_3()
+
 def function_2():
     print("Select the class you'd like to view")
     Math = [89, 100, 95, 93, 89]                                            #VALUES FOR MATH 
@@ -68,6 +64,22 @@ def function_2():
         if retry == "no":
          break
     function_1()
+
+def function_3():
+    answer = input("Would you like to review your grades once more? ")
+    if answer == "yes":
+        function_2()
+    else:
+        print("Have a good day!")
+        return  
+     
+         
+        
+
+
+    
+
+    
                                                          
 print("----------------------------")
 function_2()
