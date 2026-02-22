@@ -62,9 +62,9 @@ def function_2():
         print("--------------------------")
         function_2() 
         if retry == "no":
-         print("Ok, Have a great day!")
-         function_1()
-                                                                
+         break
+    function_1()
+                                                         
 print("----------------------------")
 function_2()
 
