@@ -6,7 +6,7 @@ def function_1():
     English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
     Science = [83, 82, 100, 95, 82]                                         #VALUES FOR SCIENCE
     Social_Studies = [100, 94, 88, 90, 92]                                  #VALUES FOR SOCIAL STUDIES
-    ask = print("Would you like to any grades to a specific class? ")
+    ask = print("Would you like to add any grades to a specific class? ")
     if ask == "yes":
         Region = input("Enter the class in which youd like to add a grade: ")
         if Region == "Math":
@@ -61,10 +61,10 @@ def function_2():
         print("Ok, here we go again.")
         print("--------------------------")
         function_2() 
-    if retry == "no":
-        print("Ok, Have a great day!")
-        function_1()
-        return                                                          
+        if retry == "no":
+         print("Ok, Have a great day!")
+         function_1()
+                                                                
 print("----------------------------")
 function_2()
 
