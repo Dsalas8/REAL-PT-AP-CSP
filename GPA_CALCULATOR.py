@@ -15,22 +15,25 @@ def function_1():
             Math.append(new)
             print("Here are your updated grades!")
             print(Math)
+            print("Redirecting to start...")
         elif Region == "English":
             new = input("Enter your new grade: ")
             English.append(new)
             print("Here are your updated grades!")
             print(English)
+            print("Redirecting to start...")
         elif Region == "Social Studies":
             new = input("Enter your new grade: ")
             Social_Studies.append(new)
             print("Here are your updated grades!")
             print(Social_Studies)
+            print("Redirecting to start...")
         elif Region == "Science":
             new = input("Enter your new grade: ")
             Science.append(new)
             print("Here are your updated grades!")
             print(Science)
-      
+            print("Redirecting to start...")
 
     if ask == "no":
         function_3()
