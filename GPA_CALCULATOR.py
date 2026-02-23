@@ -15,30 +15,30 @@ def function_1():
             Math.append(new)
             print("Here are your updated grades!")
             print(Math)
-            print("Redirecting to start...")
+            print("Redirecting to start...")  #Commentary to redirect user so they know whats happening
         elif Region == "English":
             new = input("Enter your new grade: ")
             English.append(new)
             print("Here are your updated grades!")
             print(English)
-            print("Redirecting to start...")
+            print("Redirecting to start...") #Commentary to redirect user so they know whats happening
         elif Region == "Social Studies":
             new = input("Enter your new grade: ")
             Social_Studies.append(new)
             print("Here are your updated grades!")
             print(Social_Studies)
-            print("Redirecting to start...")
+            print("Redirecting to start...")           #Commentary to redirect user so they know whats happening
         elif Region == "Science":
             new = input("Enter your new grade: ")
             Science.append(new)
             print("Here are your updated grades!")
             print(Science)
-            print("Redirecting to start...")
+            print("Redirecting to start...")    #Commentary to redirect user so they know whats happening 
 
-    if ask == "no":
-        function_3()
+    if ask == "no":             #If they answer no....
+        function_3()            #Goes to function 3 which will ask if they want to finalize review on anything.
 
-def function_2():
+def function_2():           #Purpose is to ask what classes theyd like to view.
     print("Select the class you'd like to view")
     Math = [89, 100, 95, 93, 89]                                            #VALUES FOR MATH 
     English = [99, 100, 88, 85, 91]                                         #VALUES FOR ENGLISH
@@ -76,14 +76,14 @@ def function_2():
 
 def function_3():
     print("-----------------------------")
-    answer = input("Would you like to review your grades once more? ")
+    answer = input("Would you like to review your grades once more? ")  #Give user last chance to view grades.
     if answer == "yes":
         print("---------------------------")
-        function_2()
+        function_2()                            #If yes, directs them back to function where the block of code is repeated.
     else:
         print("---------------------------")
         print("Have a good day!")
-        return  
+        return                      #Ends program.
      
          
     
