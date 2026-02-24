@@ -11,22 +11,34 @@ def function_1():
     if ask == "yes":
         Region = input("Enter the class in which youd like to add a grade: ") #ASKS FOR CLASS INPUT
         if Region == "Math":
-            new = input("Enter your new grade: ")   #FOR EVERY "elif" ASKS FOR NEW GRADE INPUT, PRINTS NEWLY CHANGED LIST
+            new = int(input("Enter your new grade: "))  #FOR EVERY "elif" ASKS FOR NEW GRADE INPUT, PRINTS NEWLY CHANGED LIST
             Math.append(new)
             print("Here are your updated grades!")
             print(Math)
+            total_sum = sum(Math)
+            count = len(Math)
+            AVERAGE = round(total_sum/count, 2)
+            print(f"Your new Grade Average is:{AVERAGE}%")
             print("Redirecting to start...")  #Commentary to redirect user so they know whats happening
         elif Region == "English":
-            new = input("Enter your new grade: ")
+            new = int(input("Enter your new grade: "))
             English.append(new)
             print("Here are your updated grades!")
             print(English)
+            total_sum = sum(English)
+            count = len(English)
+            AVERAGE = round(total_sum/count, 2)
+            print(f"Your new Grade Average is:{AVERAGE}%")
             print("Redirecting to start...") #Commentary to redirect user so they know whats happening
         elif Region == "Social Studies":
-            new = input("Enter your new grade: ")
+            new = int(input("Enter your new grade: "))
             Social_Studies.append(new)
             print("Here are your updated grades!")
             print(Social_Studies)
+            total_sum = sum(Social_Studies)
+            count = len(Social_Studies)
+            AVERAGE = round(total_sum/count, 2)
+            print(f"Your new Grade Average is:{AVERAGE}%")
             print("Redirecting to start...")           #Commentary to redirect user so they know whats happening
         elif Region == "Science":
             new = int(input("Enter your new grade: "))
