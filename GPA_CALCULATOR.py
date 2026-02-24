@@ -95,11 +95,11 @@ def function_3():
     answer = input("Would you like to review your grades once more? ")  #Give user last chance to view grades.
     if answer == "yes":
         print("---------------------------")
-        function_2()                            #If yes, directs them back to function where the block of code is repeated.
-    else:
-        print("---------------------------")
+        function_2()  
+    import sys                          #If yes, directs them back to function where the block of code is repeated.
+    if answer == "no":
         print("Have a good day!")
-        return                      #Ends program.
+        sys.exit()                     #Ends program.
      
          
     
