@@ -29,10 +29,14 @@ def function_1():
             print(Social_Studies)
             print("Redirecting to start...")           #Commentary to redirect user so they know whats happening
         elif Region == "Science":
-            new = input("Enter your new grade: ")
+            new = int(input("Enter your new grade: "))
             Science.append(new)
             print("Here are your updated grades!")
-            print(Science)
+            print(Science)            
+            total_sum = sum(Science)
+            count = len(Science)
+            AVERAGE = round(total_sum/count, 2)
+            print(f"Your new Grade Average is:{AVERAGE}%")
             print("Redirecting to start...")    #Commentary to redirect user so they know whats happening 
 
     if ask == "no":             #If they answer no....
