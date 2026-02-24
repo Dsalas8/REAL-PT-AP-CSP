@@ -15,7 +15,7 @@ def function_1():
             Math.append(new)
             print("Here are your updated grades!")
             print(Math)
-            total_sum = sum(Math)
+            total_sum = sum(Math)   #The following counts the sum of the integers in the modified lists, and calculates the average for the new grade.
             count = len(Math)
             AVERAGE = round(total_sum/count, 2)
             print(f"Your new Grade Average is:{AVERAGE}%")
@@ -25,7 +25,7 @@ def function_1():
             English.append(new)
             print("Here are your updated grades!")
             print(English)
-            total_sum = sum(English)
+            total_sum = sum(English)        #The following counts the sum of the integers in the modified lists, and calculates the average for the new grade.
             count = len(English)
             AVERAGE = round(total_sum/count, 2)
             print(f"Your new Grade Average is:{AVERAGE}%")
@@ -35,7 +35,7 @@ def function_1():
             Social_Studies.append(new)
             print("Here are your updated grades!")
             print(Social_Studies)
-            total_sum = sum(Social_Studies)
+            total_sum = sum(Social_Studies)  #The following counts the sum of the integers in the modified lists, and calculates the average for the new grade.
             count = len(Social_Studies)
             AVERAGE = round(total_sum/count, 2)
             print(f"Your new Grade Average is:{AVERAGE}%")
@@ -45,7 +45,7 @@ def function_1():
             Science.append(new)
             print("Here are your updated grades!")
             print(Science)            
-            total_sum = sum(Science)
+            total_sum = sum(Science)        #The following counts the sum of the integers in the modified lists, and calculates the average for the new grade.
             count = len(Science)
             AVERAGE = round(total_sum/count, 2)
             print(f"Your new Grade Average is:{AVERAGE}%")
