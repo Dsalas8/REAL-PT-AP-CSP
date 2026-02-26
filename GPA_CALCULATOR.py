@@ -98,7 +98,7 @@ def function_3():
         function_2()  #If yes, directs them back to function where the block of code is repeated.
     import sys                          
     if answer == "no":
-        print("Have a good day!")
+        print("Thanks for using the GPATRACKER! Have a good day!")
         sys.exit()                     #Ends program from any function.
      
          
@@ -109,6 +109,6 @@ function_2()
 
 
 
-#CREATE A FUNCTION FOR THE WHOLE CODE 
+ 
 
 
