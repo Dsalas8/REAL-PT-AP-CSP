@@ -61,36 +61,36 @@ def function_2():           #Purpose is to ask what classes theyd like to view.
     Science = [83, 82, 100, 95, 82]                                         #VALUES FOR SCIENCE
     Social_Studies = [100, 94, 88, 90, 92]                                  #VALUES FOR SOCIAL STUDIES
     classes = ["Math: 93.2%", "English: 92.6%", "Science: 88.4%", "Social Studies: 92.8%"]          #THE LIST HAS SUBJECTS WITH CERTAIN GRADE VALUES, AND WILL BE EXTRACTED WHEN ASKING WHAT CLASS WILL BE VIEWED
-    print("[Math, English, Science, Social Studies]")
-    subject = input("Enter the class youd like to view: ")
-    print("You chose " + subject + ", Here is your grade!")
+    print("[Math, English, Science, Social Studies]")        
+    subject = input("Enter the class youd like to view: ")   #ASKS USER FOR INPUT 
+    print("You chose " + subject + ", Here is your grade!")  #PUTS OUTPUT FOR THE IMPUT JUST ASKED
     if subject == "Math":
-        print(classes[0])
+        print(classes[0])    #PRINTS OUT THE PERCENTAGE GRADE
         print("Here below are your recent grades for " + subject +":")
-        print(Math[0:])
+        print(Math[0:])      #PRINTS LIST OF GRADES 
     if subject == "English":
-        print(classes[1])
+        print(classes[1])    #PRINTS PERCENTAGE 
         print("Here below are your recent grades for " + subject +":")
-        print(English[0:])
+        print(English[0:])   #PRINTS OUT THE WHOLE LIST
     if subject == "Science":
-        print(classes[2])
+        print(classes[2])    #PRINTS OUT THE PERCENTAGE GRADE 
         print("Here below are your recent grades for " + subject +":")
-        print(Science[0:])
+        print(Science[0:])   #PRINTS OUT WHOLE LIST 
     if subject == "Social Studies":
-        print(classes[3])
+        print(classes[3])    #PRINTS OUT PERCENTAGE GRADE
         print("Here below are your recent grades for " + subject +":")
-        print(Social_Studies[0:])
+        print(Social_Studies[0:]) #WILL PRINT OUT THE WHOLE LIST 
     print("----------------------")
-    retry = input("Do you want to look at other classes grades? ")
+    retry = input("Do you want to look at other classes grades? ")      #ASKS FOR INPUT IF THEY WANT TO REVIEW, IF THE FUNCTION WILL REPEAT.
     while retry == "yes":
         print("Ok, here we go again.")
         print("--------------------------")
-        function_2() 
+        function_2() #RECALLS THE FUNCTION AGAIN.
         if retry == "no":
          break
-    function_1()
+    function_1() #CALLS TO FUNCTION 1, WHERE ITLL ASK IF THEY WANT TO CHANGE GRADES.
 
-def function_3():
+def function_3(): #THE LAST CHANCE FOR USERS TO VIEW GRADES.
     print("-----------------------------")
     answer = input("Would you like to review your grades once more? ")  #Give user last chance to view grades.
     if answer == "yes":
